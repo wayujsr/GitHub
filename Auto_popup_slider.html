@@ -1,0 +1,236 @@
+<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+<style type="text/css">
+.bday_bash_box{width:1000px;}
+.ani_img_pop{display:none; position: fixed; z-index: 200; background-image: url(http://cdn.shopclues.com/images/skin/background_for_banklist.png); left: 0px; top: 0px; width: 100%; min-height: 100%;} 
+.ani_pop_content_box{position:relative; width:700px; height:400px; margin:auto; margin-top:100px;  border: 4px solid #666; border-radius: 5px; text-align: center; background:#fff;}
+.ani_pop_content_box .left,
+.ani_pop_content_box .right
+{border-radius: 50px; -moz-border-radius: 50px; background: #FC6; padding: 10px; font-size: 30px; font-weight: bold; position: absolute; font-family: trebuchet ms; width: 36px;}
+.ani_pop_content_box .left{left:-33px; top:200px;}
+.ani_pop_content_box .right{right:-33px; top:200px;}
+.ani_pop_content_box .left:hover,
+.ani_pop_content_box .right:hover{ background:#F93; color:#333; cursor:pointer;}
+.ani_pop_content_box .disable{background:#aaa; color:#ccc;}
+.ani_pop_content_box .disable:hover{background:#aaa; color:#ccc;}
+.ani_pop_content{width:700px; height:400px; margin:auto;  display: table-cell; vertical-align: middle; }
+.ani_pop_content img{margin:auto; max-height:380px; max-width:680px; padding:10px 0 ;}
+.b_day_box_bash .ml_pageheaderCateogry{margin-top:25px; margin-bottom: 10px;}
+.b_day_box_bash .ml_pageheaderCateogry .ml_pageheaderCateogry_heading{font-size:16px; font-weight:bold;}
+.bg_bash_bday{background:url('http://cdn.shopclues.com/images/skin/bday_bash_bg_pic_fav.jpg') 0 0 no-repeat; width:303px; height:248px; float:left; position:relative; text-align:center;  margin:10px 15px}
+.bg_shoadow_bg{background:url('http://cdn.shopclues.com/images/skin/bday_bash_bg_pic_dark.png') 0 0 no-repeat; width:303px; height:248px; top:0; left:0; position:absolute;display:none;}
+.img_bash_bday{text-align:center; margin-top:22px; cursor:pointer;}
+.bday_bash_cus_name{ background:url('http://cdn.shopclues.com/images/skin/name_holder_bday_bash.png') no-repeat 0 0 ; margin:auto; width:201px; height:32px; font-size:18px; position: absolute; left: 48px; bottom: 18px; padding-top: 8px; color:#000000; }
+.bday_bash_cus_name_comment{color:#048ccc; padding-left:10px;}
+.bday_bash_span{background:url('http://cdn.shopclues.com/images/skin/bday_bash_left_quote.jpg') no-repeat 0 0 ; padding-left:10px;display:inline-block; font:11px/16px Verdana, Geneva, sans-serif; margin-left:10px;}
+.bday_bash_label{background:url('http://cdn.shopclues.com/images/skin/bday_bash_right_quote.jpg') no-repeat top right ;padding-right:12px; display:inline-block;}
+.bday_bash_coment_box{border-bottom: 1px dashed #ccc; padding-bottom: 7px; margin: 5px 0; clear: both; float: left; display: block; width: 100%;}
+</style>
+
+<div style="width:1000px; margin:auto;" class="b_day_box_bash">
+<div class="ml_pageheaderCateogry">
+   
+</div>
+<div class="bday_bash_box">
+	<div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_1" src="http://cdn.shopclues.com/images/skin/wishes_1.png">
+        <div class="bday_bash_cus_name">Sarthak Bajaj</div>
+    </div>
+    
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_2" src="http://cdn.shopclues.com/images/skin/wishes_2.jpg">
+        <div class="bday_bash_cus_name">Gaurav Shah</div>
+    </div>
+    
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_3" src="http://cdn.shopclues.com/images/skin/wishes_3.jpg">
+        <div class="bday_bash_cus_name">Hardik Shah</div>
+    </div>
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_4" src="http://cdn.shopclues.com/images/skin/wishes_4.jpg">
+        <div class="bday_bash_cus_name">Hasan Khan</div>
+    </div>
+    
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_5" src="http://cdn.shopclues.com/images/skin/wishes_5.jpg">
+        <div class="bday_bash_cus_name">Himanshu Patel</div>
+    </div>
+    
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_6" src="http://cdn.shopclues.com/images/skin/wishes_6.jpg">
+        <div class="bday_bash_cus_name">Manish Kataria</div>
+    </div>
+    <!-- sal;kdjf as;ldkjf a;sljd f-->
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_7" src="http://cdn.shopclues.com/images/skin/wishes_7.jpg">
+        <div class="bday_bash_cus_name">Manan Chopra</div>
+    </div>
+    
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_8" src="http://cdn.shopclues.com/images/skin/wishes_8.jpg">
+        <div class="bday_bash_cus_name">Naveen Singh</div>
+    </div>
+    
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_9" src="http://cdn.shopclues.com/images/skin/wishes_9.jpg">
+        <div class="bday_bash_cus_name">Sarita Singh</div>
+    </div>
+    
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_10" src="http://cdn.shopclues.com/images/skin/wishes_10.jpg">
+        <div class="bday_bash_cus_name">Daksha</div>
+    </div>
+    
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_11" src="http://cdn.shopclues.com/images/skin/wishes_16.jpg">
+        <div class="bday_bash_cus_name">Shruti Chopra</div>
+    </div>
+    
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_12" src="http://cdn.shopclues.com/images/skin/wishes_12.jpg">
+        <div class="bday_bash_cus_name">Vandana Choudhary</div>
+    </div>
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_13" src="http://cdn.shopclues.com/images/skin/wishes_13.jpg">
+        <div class="bday_bash_cus_name">Dr.Shruti</div>
+    </div>
+    
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_14" style="margin-top: 49px;" src="http://cdn.shopclues.com/images/skin/wishes_14.jpg">
+        <div class="bday_bash_cus_name">Reejesh Kondodi</div>
+    </div>
+    
+    <div class="bg_bash_bday">
+    	<div class="bg_shoadow_bg"></div>
+        <img class="img_bash_bday" id="img_15" src="http://cdn.shopclues.com/images/skin/wishes_15.jpg">
+        <div class="bday_bash_cus_name">Hiren Chavda</div>
+    </div>
+    
+</div>
+
+<div class="ml_pageheaderCateogry">
+    
+</div>
+</div>
+<div id="ani_pop_up" class="ani_img_pop">
+<div class="ani_pop_content_box">
+    <input type="hidden" value="ani_1_panel" id="value_str">
+    <div class="ani_pop_content">
+    <img class="img_close" src="http://images.shopclues.com/images/skin/pj2_close_btn_banklist.png " style="float: right; position:absolute; top:0; right:0; margin: -28px -18px 0 0; cursor: pointer;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_1_lrg.jpg" id="img_1_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_2_lrg.jpg" id="img_2_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_3_lrg.jpg" id="img_3_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_4_lrg.jpg" id="img_4_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_5_lrg.jpg" id="img_5_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_6_lrg.jpg" id="img_6_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_7_lrg.jpg" id="img_7_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_8_lrg.jpg" id="img_8_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_9_lrg.jpg" id="img_9_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_10_lrg.jpg" id="img_10_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_16_lrg.jpg" id="img_11_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_12_lrg.jpg" id="img_12_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_13_lrg.jpg" id="img_13_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_14_lrg.jpg" id="img_14_panel" style="display:none;">
+    <img src="http://cdn.shopclues.com/images/skin/wishes_15_lrg.jpg" id="img_15_panel" style="display:none;">
+
+    </div>
+    <div class="left">&lt;</div>
+    <div class="right">&gt;</div>    
+    </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	var d = $('#value_str').val();
+	if(d == "img_1_panel")
+		{
+			$('.left').addClass('disable');
+		}
+	if(d == "img_15_panel")
+		{
+			$('.right').addClass('disable');
+		}
+	var alr = $('.ani_pop_content img').first().attr("id"); //alert(alr);
+	$('.left').click(function(){
+		var pre = $('#value_str').val();
+		if(pre == "img_1_panel")
+		{
+			$('.left').addClass('disable');
+		}
+		else
+		{
+		$('.right').removeClass('disable');
+		$('#' + pre).hide();
+		$('#' + pre).prev().fadeIn();
+		var txt_val = $('#' + pre).prev().attr("id");
+		$('#value_str').val(txt_val);
+		}
+	});
+	$('.right').click(function(){
+		var pre = $('#value_str').val();
+		if(pre == "img_15_panel")
+		{
+			$('.right').addClass('disable');
+		}
+		else
+		{
+		$('.left').removeClass('disable');	
+		var nxt = $('#value_str').val();
+		$('#' + nxt).hide();
+		$('#' + nxt).next().fadeIn();
+		var txt_val = $('#' + nxt).next().attr("id");
+		$('#value_str').val(txt_val);
+		}
+	});
+	var d = $('#value_str').val();
+	$(".img_bash_bday").click(function(){
+		var a = this.id;
+		var b = (a + '_panel');	
+		c = a + '_panel';
+		d = c;
+		$('#value_str').val(d);
+		$("#ani_pop_up").show(function(){
+			$('#' + b).css('display', 'block');
+		});
+		
+		
+		});
+	$(".img_close").click(function(){
+		$('.ani_img_pop').hide();
+		var d = $('#value_str').val();
+		$('#' + d).css('display', 'none');
+		
+		
+	});
+	$(document).keyup(function(e) {
+		if (e.keyCode == 27) // esc
+		{
+		$('.ani_img_pop').hide();
+		var d = $('#value_str').val();
+		$('#' + d).css('display', 'none');
+		}
+		if (e.keyCode == 37)
+		{
+		$( ".left" ).trigger( "click" );	
+			}
+		if (e.keyCode == 39)
+		{
+			$( ".right" ).trigger( "click" );
+			}
+	});
+	
+});
+</script>
+
