@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+var chk_val;
+var output;
+function check(){
+		var pawan = $('#pawan :selected').val();
+		alert(pawan);
+}
+$(document).ready(function(e) {
+	$("#check").click(function(){
+		if($("#checkcheck").prop('checked')) 
+		{
+		alert("true");
+		}
+		else
+		{
+		alert("false");			
+		}
+		});
+    var len = $('.abc input').length;
+	//alert(len);
+	for(i=0;i<len;i++)
+	{	
+		var j = i+1;
+		$(".abc #box" + j);
+		var cls = "box" + j;
+		var val = $('#'+cls).val();
+		//alert(val);
+		$('.abc #'+cls).hide();
+		$('.abc #'+cls).after("<div class=new_box value="+val+ " id=divbox"+j +">" + val + "</div>");
+	}
+	$('.new_box').click(function(){
+		//var name = "nameGorge"; 
+		//var output = name.substring(4);
+		chk_val = this.id;
+		//alert(chk_val);
+		output = chk_val.substring(3); //alert(output);
+		if($('#'+chk_val).hasClass("active")){
+		remove_cls();
+		}
+		else
+		{
+		clk_event();	
+		}
+	});
+	
+	
+});
+function clk_event()
+	{
+		$("#"+chk_val).addClass("active")	//alert('asdfnew');
+		$("#"+output).attr("checked",true);
+	} 	
+function remove_cls()
+	{
+		$("#"+chk_val).removeClass("active");	//alert('asdfnew');
+		$("#"+output).attr("checked",false);
+	} 	
+	
+
+</script>
+<style type="text/css">
+.new_box{margin:4px; padding:5px; cursor:pointer; background:#f8f8f8; display:inline-block;}
+.new_box:hover{background:#eee;}
+.active{background:#ddd;}
+</style>
+<body>
+<input id="checkcheck" type="checkbox" />
+<input id="check" type="button" />
+<select id="pawan" name="apwan" onchange="check()">
+	<option value="1">pawan1</option>
+    <option value="2">pawan2</option>
+    <option value="3">pawan3</option>
+    <option value="4">pawan4</option>
+</select>
+<form action="pawan" class="abc">
+<input type="checkbox" id="box1" value="pawan1" />
+<input type="checkbox" id="box2" value="pawan2" />
+<input type="checkbox" id="box3" value="pawan3" />
+<input type="checkbox" id="box4" value="pawan4" />
+<input type="checkbox" id="box5" value="pawan5" />
+<input type="checkbox" id="box6" value="pawan6" />
+<input type="checkbox" id="box7" value="pawan7" />
+</form>
+</body>
+</html>
