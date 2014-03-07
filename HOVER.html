@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- include jQuery Library From Google -->
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js"></script>
+
+<!-- include jQuery UI  From Google -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div onclick="pawan();">pawan</div>
+<div onclick="location.reload();">For reload page</div>
+<img id="id1" src="bg_brands_store_logo_2.jpg" />
+<img id="id2" style="cursor:pointer" src="officialbrand.gif" />
+<script type="text/javascript">
+
+  $(document).ready(function(){
+	 $("img").stop().animate({opacity: "0.8"}, 'slow');  
+    $("img").hover(function() {
+      $(this).stop().animate({opacity: "1"}, 'slow');
+    },
+    function() {
+      $(this).stop().animate({opacity: "0.8"}, 'slow');
+    });
+  });
+
+$(document).ready(function(){
+	alert('Hello pawan ');
+	$('#id1').click(function(){
+	$('#id1').fadeOut("fast"); 
+	$('#id2').fadeIn("slow"); 
+		});
+	$('#id2').click(function(){
+	$('#id2').fadeOut("fast"); 
+	$('#id1').fadeIn("slow"); 
+		});			
+	});
+
+</script>
+
+</body>
+
+</html>
